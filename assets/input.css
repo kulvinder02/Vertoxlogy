@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Gilroybold';
+    src: url(../assets/font-family/Radomir_Tinkov_-_Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Gilroylight';
+    src: url(../assets/font-family/Radomir_Tinkov_-_Gilroy-Light.otf);
+}
+
+/* npx tailwindcss -i ./assets/input.css -o ./assets/output.css --watch  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: 200ms;
+}
+
+.bg {
+    background-image: url(./image/hro-bg.png);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradint-bttn {
+    border: 1px solid transparent;
+    transition: 300ms ease-in-out;
+    border-radius: 59px;
+    background: linear-gradient(134deg, #FF2801 -0.47%, #FF6500 90.6%), linear-gradient(96deg, #0075FF 1.34%, #00F 107.5%);
+}
+
+.gradint-bttn:hover {
+    border: 1px solid white;
+    background: #000;
+}
+
+.prev-btn:hover svg circle {
+    fill: #FF3d01;
+}
+
+.prev-btn:hover svg path {
+    fill: white;
+}
+
+.next-btn:hover svg circle {
+    fill: #FF3d01;
+}
+
+.next-btn:hover svg path {
+    fill: white;
+}
+
+.icon:hover svg circle {
+    fill: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.slider3::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 8000px !important;
+    height: 1000px !important;
+    right: 98% !important;
+    background-color: #FAF8ED !important;
+    box-shadow: none !important;
+    background-color: white !important;
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 0%;
+    height: 1.5px;
+    background:white;
+    transition: 300ms ease-in-out;
+}
+
+.line:hover:after{
+    width: 100%;
+}
+.text-shadow{
+    text-shadow: 0px 4.909390449523926px 4.909390449523926px rgba(0, 0, 0, 0.25);
+}
+.text-shado2{
+    text-shadow: 0px 3px 3.0395138263702393px rgba(0, 0, 0, 0.25);
+}
+.span1_rotate {
+    transition: all 600ms linear;
+    margin-top: 10px;
+    transform: rotate(54deg);
+}
+
+.span3_rotate {
+    transition: all 600ms linear;
+    display: none;
+}
+
+.span2_rotate {
+    transition: all 600ms linear;
+    margin-top: -8px;
+    transform: rotate(-51deg);
+}
