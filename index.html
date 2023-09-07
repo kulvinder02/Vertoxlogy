@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="/assets/css/input.css" rel="stylesheet">
+  <link href="assets/css/input.css" rel="stylesheet">
   <link rel="shortcut icon" href="./image/headphone-img.png" type="image/x-icon">
   <!-- slider links -->
   <link
@@ -162,35 +162,35 @@
                 </button>
           </div>               
          </div>
+         <div class=" slider3 flex flex-wrap mt-9  mb-32">
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img1.png" alt="">
         </div>
-        <div class="flex flex-wrap mt-9 slider3 mb-32">
-            <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img1.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img2.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img3.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img4.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img1.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img2.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img3.png" alt="">
-              </div>
-              <div class="w-[33.33%] px-2">
-                <img src="./assets/image/slider-img4.png" alt="">
-              </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img2.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img3.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img4.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img1.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img2.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img3.png" alt="">
+        </div>
+        <div class="w-[33.33%] px-2">
+          <img src="./assets/image/slider-img4.png" alt="">
+        </div>
+        </div>
               
 
-              </div>
+          </div>
  </section>
 
  <!-- section-4 -->
@@ -222,6 +222,7 @@
   </div>
    </div>
  </section>
+
   <!-- section-5 -->
   <section class="relative">
     <svg class="absolute bottom-14 left-14" width="76" height="59" viewBox="0 0 76 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,8 +233,8 @@
       <path d="M26.4375 52.46C20.5278 52.9738 7.16667 54.7725 1 57.8558" stroke="#070707" stroke-width="1.54167" stroke-linecap="round"/>
       </g>
       </svg>
-      
-    <div class="flex flex-wrap items-center flex-row-reverse">
+
+    <div class="flex flex-wrap items-center flex-row-reverse overflow-visible">
       <div class="w-full lg:w-[50%]  order-2 lg:order-0">
         <div class="lg:pl-16   xl:pl-40 text-center lg:text-start py-14 sm:py-36 lg:py-0 px-4 lg:px-0">
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl   2xl:text-7xl font-black lg:max-w-[541px] font-[Gilroybold] uppercase text-shadow">At tempor, amet viverra
@@ -246,11 +247,12 @@
             <button class="py-4 z-10 relative px-8 gradint-bttn rounded-full text-base font-[Gilroybold] text-white lg:mt-12  shadow-md hover:shadow-none shadow-[#ff5001]">Talk To Me</button>
         </div>
     </div>
-     <div class="w-[100%] lg:w-[50%]">
-        <img src="./assets/gif/headphone-gif.gif" alt="#" class="w-full">
+     <div class="w-[100%] lg:w-[50%] ">
+        <img src="./assets/gif/headphone-gif.gif" alt="#" class="w-[100%]">
     </div>
     </div>
   </section>
+
   <!-- section-6 -->
   <section class="relative">
     <svg class="absolute bottom-14 right-14" width="92" height="71" viewBox="0 0 92 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -283,6 +285,7 @@
   </div>
     </div>
   </section>
+
   <!-- footer -->
   <footer class="relative" id="contact">
     <svg class="absolute top-14 left-14" width="76" height="59" viewBox="0 0 76 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -430,6 +433,7 @@
         <h1 class="text-[#070707] opacity-60 text-base font-normal py-2  lg:py-0 font-[Gilroylight]">All Rights Reserved.</h1>
     </div>
 </footer>
+
  <!-- slider scripts -->
  <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -445,15 +449,12 @@
     ></script>
  <script>
     $('.slider3').slick({
-    
       dots: false,
-      speed: 1,
       slidesToShow: 4,
       slidesToScroll: 1,
       pauseOnHover: true,
       pauseOnFocus: true,
-      autoPlay:true,
-      autoPlaySpeed:10000,
+      arrows:false,
       cssEase: 'linear',
       responsive: [{
           breakpoint: 1200,

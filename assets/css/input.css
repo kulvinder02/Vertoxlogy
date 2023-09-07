@@ -61,18 +61,24 @@
 html{
     scroll-behavior: smooth;
 }
-.slider3::after {
+ .slick-list{
+    overflow: visible !important;
+    padding:0 20% 0 0;
+    position: relative;
+  } 
+  
+  .slider3::after {
     content: ' ';
     position: absolute;
     top: 0px;
     bottom: 0px;
-    width: 8000px !important;
-    height: 1000px !important;
-    right: 98% !important;
-    background-color: #FAF8ED !important;
-    box-shadow: none !important;
-    background-color: white !important;
-}
+    width: 100%;
+    right: 100%;
+    background-color: white;
+  }
+  .over-slider{
+    z-index: 2;
+  }
 .line{
     position: relative;
 }
