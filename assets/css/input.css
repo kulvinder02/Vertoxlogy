@@ -8,7 +8,7 @@
     src: url(../font-family/Radomir_Tinkov_-_Gilroy-Light.otf);
 }
 
-/* npx tailwindcss -i ./assets/input.css -o ./assets/output.css --watch  */
+/* npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch  */
 
 @tailwind base;
 @tailwind components;
@@ -66,6 +66,9 @@ html{
     padding:0 20% 0 0;
     position: relative;
   } 
+  .visible{
+    overflow: visible !important;
+  }
   
   .slider3::after {
     content: ' ';
@@ -79,6 +82,9 @@ html{
   .over-slider{
     z-index: 2;
   }
+  .slick-slide img {
+    display: block !important;
+}
 .line{
     position: relative;
 }
